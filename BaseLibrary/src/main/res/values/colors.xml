@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#6B6B7C</color>
+    <color name="colorPrimary">@color/appColor</color>
+    <color name="colorPrimaryDark">#FCFCFC</color>
+    <color name="windowBackground">#FFFFFF</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="titleGreen">#00C9C8</color>
+    <color name="lineColor">#88000050</color>
+    <!--app主色调-->
+    <color name="appColor">#F8F8F8</color>
+    <color name="appWhite">#FFFFFF</color>
+    <color name="appBackground">#F2F2F2</color>
+    <!--dialog-->
+    <color name="commonDialogMsgTextColor">#FFFFFF</color>
+    <color name="commonDialogTitleCancelTextColor">#FFFFFF</color>
+    <color name="commonDialogTitleConfirmTextColor">#FFFFFF</color>
+    <color name="commonDialogBgColor">#1E2132</color>
+    <!--ToolBar color-->
+    <color name="toolbarColor">#ffa200</color>
+    <color name="btn_color_press">#ffa200</color>
+    <color name="yaHei">#333333</color>
+    <color name="textOrange">#F36D3F</color>
+
+
+    <!--按钮背景-->
+    <color name="blue">#4A90E2</color>
+
+    <!--EditText-->
+    <color name="editTextTextColor">#B3B3B3</color>
+
+    <!--app color-->
+    <color name="BC_6B6B7C">#6B6B7C</color>
+    <color name="BC_40404E">#40404E</color>
+    <color name="BC_666666">#666666</color>
+    <color name="FC_E6E6E6">#E6E6E6</color>
+    <color name="FC_666666">#666666</color>
+    <color name="BC_4A90E2">#4A90E2</color>
+    <color name="BC_B3B3B3">#B3B3B3</color>
+
+    <color name="btn_green">#4AA03B</color>
+    <color name="text_sell_red">#993D39</color>
+    <color name="text_buy_green">#70824A</color>
+    <color name="text_gray">#666666</color>
+    <color name="pb_bg_red">#13E60000</color>
+    <color name="pb_bg_green">#1300E600</color>
+
+
+    <color name="main_orange">#FB7418</color>
+    <color name="main_green">#4AA03B</color>
+
+    <color name="status_color">#66000000</color>
+
+</resources>

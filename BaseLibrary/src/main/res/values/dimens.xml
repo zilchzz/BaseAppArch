@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--dialog-->
+    <dimen name="commonDialogTextSize">13dp</dimen>
+    <dimen name="commonDialogBtnSize">17dp</dimen>
+    <dimen name="toolbarHeight">50dp</dimen>
+    <dimen name="editTextHeight">36dp</dimen>
+</resources>

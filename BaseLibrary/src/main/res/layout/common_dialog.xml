@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_dialog_bg"
+    android:gravity="center"
+    android:minWidth="250dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/DialogTitleTextStyle"
+        android:layout_marginTop="30dp"
+        android:text="温馨提示"
+        android:textColor="@color/commonDialogMsgTextColor"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="25dp"
+        android:text="2018-07-04 18:39:38 该账号已在其他手机(设备名)登录，IP 地址：45.79.87.92(深圳)，如果这不是您本人的操作，请立刻修改您的登录密码。"
+        android:textColor="@color/commonDialogMsgTextColor"
+        android:textSize="@dimen/commonDialogTextSize" />
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="wrap_content"
+        android:layout_height=".8dp"
+        android:background="@color/lineColor" />
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_negative"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="取消"
+            android:textColor="@color/commonDialogTitleCancelTextColor"
+            android:textSize="@dimen/commonDialogBtnSize" />
+
+        <View
+            android:id="@+id/middle_divider_line"
+            android:layout_width=".8dp"
+            android:layout_height="match_parent"
+            android:background="@color/lineColor" />
+
+        <Button
+            android:id="@+id/btn_positive"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="确定"
+            android:textColor="@color/commonDialogTitleConfirmTextColor"
+            android:textSize="@dimen/commonDialogBtnSize" />
+    </LinearLayout>
+</LinearLayout>

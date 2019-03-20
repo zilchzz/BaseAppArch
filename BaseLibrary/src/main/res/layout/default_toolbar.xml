@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zilchzz.baselibrary.widgets.DefaultToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbarHeight"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    app:popupTheme="@style/ToolbarPopupTheme"
+    app:theme="@style/ToolbarTheme"
+    app:titleTextColor="@color/colorWhite"
+    app:subtitleTextColor="@color/colorWhite"
+    app:titleTextAppearance="@style/ToolbarTitle" />

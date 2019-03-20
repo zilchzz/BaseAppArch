@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--没有转场动画-->
+    <style name="NoAnimationTheme" parent="AppTheme"><!--这里也要注意 如果你的么有Apptheme会报空指针的！！！！！！！！！！！-->
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+    </style>
+
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <!--启动图theme-->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@mipmap/start_page</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--底栏样式-->
+    <style name="BottomBarRadioButtonStyle">
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+    <!--tool bar theme-->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:colorBackground">#a5b6a9</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/colorWhite</item>
+        <item name="actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+    </style>
+
+    <style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--tool bar theme-->
+
+
+    <!--Dialog样式-->
+    <style name="DialogStyle" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="DialogTitleTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- ProgressBar样式 -->
+    <style name="LightProgressDialog" parent="@style/LightDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="LightDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <!--TextView style-->
+    <style name="normalTextStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#4D4D4D</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="normalTextStyle_16" parent="normalTextStyle">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="blackTextStyle" parent="normalTextStyle">
+        <item name="android:textColor">#1A1A1A</item>
+    </style>
+
+    <style name="blackTextStyle_16" parent="blackTextStyle">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="blackTextStyle_12" parent="blackTextStyle">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="normalTextStyle_12" parent="normalTextStyle">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="whiteTextStyle" parent="normalTextStyle">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="normalTextStyle_99" parent="normalTextStyle">
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="normalTextStyle_99_12" parent="normalTextStyle_99">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="whiteTextStyle_17" parent="whiteTextStyle">
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="whiteTextStyle_12" parent="whiteTextStyle">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="normalTextStyle_66_12" parent="normalTextStyle">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/BC_666666</item>
+    </style>
+
+    <style name="normalTextStyle_B3_12" parent="normalTextStyle">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/BC_B3B3B3</item>
+    </style>
+
+    <style name="GreenTitleTextStyle" parent="normalTextStyle">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/titleGreen</item>
+    </style>
+
+    <style name="GrayTextStyle_12" parent="normalTextStyle">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="GrayTextStyle_10" parent="normalTextStyle">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <!--EditText style-->
+    <style name="editTextStyle">
+        <item name="android:background">@drawable/et_underline_unselected</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColorHint">@color/editTextTextColor</item>
+        <item name="android:textColor">@color/editTextTextColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/editTextHeight</item>
+    </style>
+
+    <style name="editTextPhoneStyle" parent="editTextStyle">
+        <item name="android:maxLength">11</item>
+        <item name="android:inputType">phone</item>
+    </style>
+
+    <style name="editTextPwdStyle" parent="editTextStyle">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <style name="editTextVerifyCodeStyle" parent="editTextStyle">
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">6</item>
+    </style>
+
+
+    <style name="editTextNumberStyle" parent="editTextStyle">
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <style name="boxLeftRightButtonStyle">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+</resources>
