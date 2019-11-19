@@ -10,7 +10,7 @@ import java.util.*
 /**
  * Created by cy on 2018/9/17.
  */
-fun getSign(map: Map<String, String?>): String? {
+fun getSign(map: Map<String, String?>): String {
     val beforeMd5 = getFcatDatePrefix() + httpBuildQuery(map)
     Log.d("eeeee", beforeMd5)
     return beforeMd5.md5Encode()
@@ -55,8 +55,8 @@ fun httpBuildQuery(array: Map<String, String?>): String? {
 }
 
 
-fun getCommonRequestMap(): TreeMap<String, String?> {
-    val commonParamsMap = TreeMap<String, String?>()
+fun getCommonRequestMap(): TreeMap<String, String> {
+    val commonParamsMap = TreeMap<String, String>()
     commonParamsMap["identify"] = (Build.FINGERPRINT + "/" + getMac()).md5Encode()
     commonParamsMap["platform"] = "ANDROID"
     commonParamsMap["version"] = BaseApplication.get().versionName()

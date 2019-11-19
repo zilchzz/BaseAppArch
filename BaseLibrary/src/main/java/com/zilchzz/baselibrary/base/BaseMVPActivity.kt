@@ -8,7 +8,7 @@ import com.zilchzz.baselibrary.net.HttpCode
 import java.lang.reflect.ParameterizedType
 
 /**
- * Created by zhongzhanzhong on 2018/3/9.
+ * Created by ouyangfeng on 2018/3/9.
  */
 @Suppress("UNCHECKED_CAST")
 abstract class BaseMVPActivity<V : BaseView, P, out T : BasePresenter<V, P>> : BaseActivity(), OnHttpError {

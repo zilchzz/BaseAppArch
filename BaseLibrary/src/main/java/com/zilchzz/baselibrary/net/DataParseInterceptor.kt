@@ -9,7 +9,7 @@ import io.reactivex.functions.Function
 /**
  * 拦截业务异常，并完成Data数据解析
  *
- * @author zhongzhanzhong 2018-04-14 12:51
+ * @author ouyangfeng 2018-04-14 12:51
  */
 class DataParseInterceptor<T> : Function<BaseResp<T>, T> {
 

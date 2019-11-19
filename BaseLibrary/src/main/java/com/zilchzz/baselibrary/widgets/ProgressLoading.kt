@@ -9,7 +9,7 @@ import com.zilchzz.baselibrary.R
 import org.jetbrains.anko.find
 
 /**
- * Created by zhongzhanzhong on 2018/3/16.
+ * Created by ouyangfeng on 2018/3/16.
  */
 class ProgressLoading private constructor(context: Context, theme: Int) : Dialog(context, theme) {
     companion object {

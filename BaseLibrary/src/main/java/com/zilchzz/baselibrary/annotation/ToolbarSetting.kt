@@ -3,7 +3,7 @@ package com.zilchzz.baselibrary.annotation
 /**
  * 该注解旨在简化Toolbar基础设置工作，通过注解自动完成Toolbar基础设置
  *
- * @author zhongzhanzhong 2017-04-07 10:41
+ * @author ouyangfeng 2017-04-07 10:41
  */
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.CLASS)

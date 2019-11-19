@@ -8,7 +8,7 @@ import android.util.AttributeSet
 /**
  * Base class of all toolbar
  *
- * @author zhongzhanzhong 2016-12-11 12:10
+ * @author ouyangfeng 2016-12-11 12:10
  */
 abstract class AbsToolbar(context: Context, attrs: AttributeSet?) : Toolbar(context , attrs) {
     var onNavigationClick: ((toolbar: AbsToolbar)->Unit)? = null

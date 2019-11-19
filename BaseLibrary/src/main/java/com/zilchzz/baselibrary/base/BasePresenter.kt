@@ -4,7 +4,7 @@ import com.zilchzz.baselibrary.net.RetrofitHelper
 import java.lang.reflect.ParameterizedType
 
 /**
- * Created by zhongzhanzhong on 2018/3/9.
+ * Created by ouyangfeng on 2018/3/9.
  */
 open class BasePresenter<T : BaseView, P> {
     lateinit var mBaseView: T

@@ -1,7 +1,7 @@
 package com.zilchzz.baselibrary.net
 
 /**
- * Created by zhongzhanzhong on 2018/4/9.
+ * Created by ouyangfeng on 2018/4/9.
  */
 class ServerConfig {
     companion object {

@@ -8,7 +8,7 @@ import android.os.Build
 import java.util.*
 
 /**
- * Created by zhongzhanzhong on 2018/3/15.
+ * Created by ouyangfeng on 2018/3/15.
  */
 class AppManager private constructor() {
     private val activityStack: Stack<Activity> = Stack()

@@ -18,7 +18,7 @@ import kotlin.properties.Delegates
 /**
  * Default toolbar
  *
- * @author zhongzhanzhong 2016-12-11 14:14
+ * @author ouyangfeng 2016-12-11 14:14
  */
 open class DefaultToolbar(context: Context, attrs: AttributeSet?) : AbsToolbar(context, attrs) {
     private var mTitleView: TextView by Delegates.notNull()

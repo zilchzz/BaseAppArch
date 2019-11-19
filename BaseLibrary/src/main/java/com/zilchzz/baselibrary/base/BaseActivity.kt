@@ -324,7 +324,7 @@ open class BaseActivity : RxAppCompatActivity() {
      * @param fragment 切换的目标Fragment
      * @param smooth true 平行切换Fragment，不加入回退栈。
      *               false 正确切换Fragment，并加入回退栈
-     * @param params 传递到目标Fragment的数据 (eg："name" to "zhongzhanzhong")
+     * @param params 传递到目标Fragment的数据 (eg："name" to "ouyangfeng")
      */
     fun switchTo(
         fragment: KClass<out BaseFragment>,
@@ -358,7 +358,7 @@ open class BaseActivity : RxAppCompatActivity() {
      * 平行切换Fragment，通常用于Tab页面切换Fragment
      *
      * @param fragment 目标Fragment
-     * @param params 传递到目标Fragment的数据 (eg："name" to "zhongzhanzhong")
+     * @param params 传递到目标Fragment的数据 (eg："name" to "ouyangfeng")
      */
     fun smoothSwitchTo(
         fragment: KClass<out BaseFragment>,

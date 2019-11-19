@@ -3,7 +3,7 @@ package com.zilchzz.baselibrary.net.bean
 import com.google.gson.annotations.SerializedName
 
 /**
- * Created by zhongzhanzhong on 2018/3/11.
+ * Created by ouyangfeng on 2018/3/11.
  */
 class BaseResp<T>(@SerializedName(value = "code", alternate = ["errcode"]) val code: Int,@SerializedName(value = "message", alternate = ["msg"])  val message: String, @SerializedName(value = "data", alternate = ["datalist"]) val data: T) {
     companion object {

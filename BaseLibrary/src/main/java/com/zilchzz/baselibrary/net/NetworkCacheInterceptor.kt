@@ -6,7 +6,7 @@ import okhttp3.Response
 class NetworkCacheInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request()
-        var maxAge = request.cacheControl().maxAgeSeconds()
+        var maxAge = request.cacheControl.maxAgeSeconds
         if (maxAge == -1)
             maxAge = 20
         val response = chain.proceed(request)

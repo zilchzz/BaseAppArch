@@ -6,7 +6,7 @@ import io.reactivex.functions.Function
 /**
  * Error interceptor
  *
- * @author zhongzhanzhong 2018-04-14 12:47
+ * @author ouyangfeng 2018-04-14 12:47
  */
 class ErrorInterceptor<T> : Function<Throwable, Observable<T>> {
     override fun apply(t: Throwable): Observable<T> {

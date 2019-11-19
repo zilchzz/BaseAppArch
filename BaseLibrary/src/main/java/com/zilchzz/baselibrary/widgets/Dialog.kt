@@ -15,7 +15,7 @@ import com.zilchzz.baselibrary.ext.onSingleClick
 /**
  * Dialog
  *
- * @author zhongzhanzhong 2017年08月16/8/11日 14:31
+ * @author ouyangfeng 2017年08月16/8/11日 14:31
  */
 class Dialog(context: Context) : android.app.Dialog(context, R.style.DialogStyle) {
     private val mMessageText: TextView

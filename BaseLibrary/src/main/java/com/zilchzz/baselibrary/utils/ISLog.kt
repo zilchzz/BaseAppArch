@@ -6,7 +6,7 @@ import com.zilchzz.baselibrary.BuildConfig
 /**
  * Log日志简单实现
  *
- * @author zhongzhanzhong 2018-04-05 21:32
+ * @author ouyangfeng 2018-04-05 21:32
  */
 class ISLog {
     companion object {

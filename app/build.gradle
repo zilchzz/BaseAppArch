@@ -1,11 +1,10 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion compile_version
+    buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId application_id
         minSdkVersion min_sdk_version
@@ -18,12 +17,35 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+    //签名配置
+    signingConfigs {
+        debugConfig {
+            keyAlias "zilch"
+            keyPassword "331243"
+            storeFile file("zilch.keystore")
+            storePassword "331243"
+        }
+        releaseConfig {
+            keyAlias "zilch"
+            keyPassword "331243"
+            storeFile file('zilch.keystore')
+            storePassword "331243"
         }
     }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debugConfig
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+        }
+    }
+    buildToolsVersion = '28.0.3'
 }
 
 dependencies {

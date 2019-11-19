@@ -3,7 +3,7 @@ package com.zilchzz.baselibrary.net
 /**
  * 封装Http请求状态码
  *
- * @author zhongzhanzhong 2018-04-14 12:58
+ * @author ouyangfeng 2018-04-14 12:58
  */
 enum class HttpCode(val code: Int) {
     STATUS_OK(200),
